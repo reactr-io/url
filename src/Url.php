@@ -93,7 +93,7 @@ class Url
 
     /**
      * Gets the port component of the url
-     * @return int:NULL
+     * @return int|NULL
      */
     function getPort()
     {
