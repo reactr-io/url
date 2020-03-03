@@ -2,8 +2,6 @@
 
 namespace ReactrIO\Url;
 
-require_once('vendor/autoload.php');
-
 /**
  * Provides an interface that matches spatie/url, but is WP-compatible
  */
