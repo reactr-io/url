@@ -1,0 +1,22 @@
+{
+    "name": "reactr-io/url",
+    "description": "Parse and manipulate urls. Provides an API interface compatible with spatie/url, but designed to work in WP",
+    "require": {
+        "jakeasmith/http_build_url": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Weichert",
+            "email": "mweichert@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "7.5.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "ReactrIO\\Url\\" : "./src/"
+        }
+    }
+}
