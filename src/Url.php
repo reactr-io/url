@@ -97,7 +97,7 @@ class Url
      */
     function getPort()
     {
-        return isset($this->_components['port']) ? intval($this->_components['port']) : NULL;
+        return isset($this->_components['port']) ? intval($this->_components['port']) : 0;
     }
 
     /**
