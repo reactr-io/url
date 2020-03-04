@@ -20,7 +20,7 @@ class Url
 
         // Set query vars
         unset($this->_components['query']);
-        $query = isset($components['query']) ? $components['query'] : '';
+        $query = isset($components['query']) ? $components['query'] : [];
         $this->_query = $this->_to_query_assoc_array($query);
     }
 
