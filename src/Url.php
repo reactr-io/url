@@ -55,7 +55,7 @@ class Url
             
         }
 
-        return '';
+        return [];
     }
 
     /**
