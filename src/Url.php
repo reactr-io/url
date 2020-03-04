@@ -29,7 +29,7 @@ class Url
      * @param array $components
      * @return self
      */
-    protected static function _fromComponents($components=[])
+    protected static function _fromComponents(array $components=[])
     {
         $klass = self::class;
         return new $klass($components);
@@ -82,7 +82,7 @@ class Url
      * @param string $host
      * @return self
      */
-    function withHost(string $host)
+    function withHost($host)
     {
         $parts = $this->_components;
         $parts['host'] = $host;
@@ -103,7 +103,7 @@ class Url
      * @param int $port set to 0 if the port is implicit
      * @return self
      */
-    function withPort(int $port)
+    function withPort($port)
     {
         $parts = $this->_components;
         $parts['port'] = ($port === 0 ? NULL : $port);
@@ -124,7 +124,7 @@ class Url
      * @param string $path
      * @return self
      */
-    function withPath(string $path)
+    function withPath($path)
     {
         $parts = $this->_components;
         $parts['path'] = $path;
@@ -145,7 +145,7 @@ class Url
      * @param string $scheme
      * @return self
      */
-    function withScheme(string $scheme)
+    function withScheme($scheme)
     {
         $parts = $this->_components;
         $parts['scheme'] = trim($scheme, ':/');
@@ -175,7 +175,7 @@ class Url
      * @param string $query
      * @return self
      */
-    function withQuery(string $query)
+    function withQuery($query)
     {
         $parts = $this->_components;
         $parts['query'] = $query;
@@ -187,7 +187,7 @@ class Url
      * @param string $key
      * @return string
      */
-    function getQueryParameter(string $key)
+    function getQueryParameter($key)
     {
         return isset($this->_query[$key]) ? $this->_query[$key] : '';
     }
@@ -198,7 +198,7 @@ class Url
      * @param string $val can be null
      * @return self
      */
-    function withQueryParameter(string $key, string $val=NULL)
+    function withQueryParameter($key, $val=NULL)
     {
         $parts = $this->_components;
         $query = $this->_query;
@@ -213,7 +213,7 @@ class Url
      * @param string $key
      * @return self
      */
-    function withoutQueryParameter(string $key)
+    function withoutQueryParameter($key)
     {
         $parts = $this->_components;
         $query = $this->_query;
